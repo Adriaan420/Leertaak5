@@ -9,6 +9,7 @@
  * @copyright  2010 - 2015 Fuel Development Team
  * @link       http://fuelphp.com
  */
+use Auth\Auth;
 
 /**
  * The Welcome Controller.
