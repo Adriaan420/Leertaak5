@@ -109,6 +109,11 @@ return array(
 	// 'log_path'         => APPPATH.'logs/',
 	// 'log_date_format'  => 'Y-m-d H:i:s',
 
+	'always_load' => array(
+		'packages' => array(
+			'auth',
+		),
+	),
 	/**
 	 * Security settings
 	 */
