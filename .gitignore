@@ -1,0 +1,14 @@
+
+.idea/.name
+.idea/Leertaak5.iml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+nbproject/private/private.xml
+fuel/app/logs/
+fuel/app/config/development/db.php
+
+nbproject/private/private.properties
+
