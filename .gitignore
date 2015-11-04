@@ -1,3 +1,4 @@
+
 .idea/.name
 .idea/Leertaak5.iml
 .idea/encodings.xml
@@ -8,3 +9,6 @@
 nbproject/private/private.xml
 fuel/app/logs/
 fuel/app/config/development/db.php
+
+nbproject/private/private.properties
+

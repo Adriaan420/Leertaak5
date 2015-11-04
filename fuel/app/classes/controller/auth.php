@@ -2,6 +2,7 @@
 
 
 use Auth\Auth;
+use Fuel\Core\Input;
 
 class Controller_Auth extends Controller_Template
 {
@@ -21,7 +22,8 @@ class Controller_Auth extends Controller_Template
 		if (Input::method() == 'POST')
 		{
 			// check the credentials.
-			if (Auth::instance()->login(Input::param('username'), Input::param('password')))
+			print_r(Input::all());
+			if (Auth::validate_user(Input::param('email'), Input::param('password')))
 			{
 				// did the user want to be remembered?
 				if (Input::param('remember', false))
@@ -42,7 +44,7 @@ class Controller_Auth extends Controller_Template
 			else
 			{
 				// login failed, show an error message
-				//\Messages::error(__('login.failure'));
+				$this->error = 'test';
 			}
 		}
 
