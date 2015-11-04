@@ -9,6 +9,7 @@
  * @copyright  2010 - 2015 Fuel Development Team
  * @link       http://fuelphp.com
  */
+use Auth\Auth;
 
 /**
  * The Welcome Controller.
@@ -19,8 +20,23 @@
  * @package  app
  * @extends  Controller
  */
-class Controller_Welcome extends Controller
+class Controller_Welcome extends Controller_Template
 {
+	public $template = 'template_admin';
+
+	public function before()
+	{
+		parent::before(); // Without this line, templating won't work!
+
+		$this->template->head = View::forge('_partial/head');
+		$this->template->header = View::forge('_partial/header');
+		$this->template->footer = View::forge('_partial/footer');
+
+		$this->template->title = 'home';
+
+		// do stuff
+	}
+
 	/**
 	 * The basic welcome message
 	 *
@@ -29,19 +45,7 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
-		return Response::forge(View::forge('welcome/index'));
-	}
-
-	/**
-	 * A typical "Hello, Bob!" type example.  This uses a Presenter to
-	 * show how to use them.
-	 *
-	 * @access  public
-	 * @return  Response
-	 */
-	public function action_hello()
-	{
-		return Response::forge(Presenter::forge('welcome/hello'));
+		$this->template->body = View::forge('welcome/index');
 	}
 
 	/**
@@ -52,6 +56,6 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_404()
 	{
-		return Response::forge(Presenter::forge('welcome/404'), 404);
+		$this->template->body = View::forge('welcome/404');
 	}
 }
