@@ -23,7 +23,7 @@ class Controller_Auth extends Controller_Template
 		{
 			// check the credentials.
 			print_r(Input::all());
-			if (Auth::validate_user(Input::param('email'), Input::param('password')))
+			if (Auth::login(Input::param('email'), Input::param('password')))
 			{
 				// did the user want to be remembered?
 				if (Input::param('remember', false))
@@ -39,7 +39,7 @@ class Controller_Auth extends Controller_Template
 
 				// logged in, go back to the page the user came from, or the
 				// application dashboard if no previous page can be detected
-				Response::redirect_back('');
+				Response::redirect_back('/home');
 			}
 			else
 			{
@@ -65,7 +65,7 @@ class Controller_Auth extends Controller_Template
 
 		// and go back to where you came from (or the application
 		// homepage if no previous page can be determined)
-		Response::redirect_back();
+		Response::redirect('');
 	}
 
 }

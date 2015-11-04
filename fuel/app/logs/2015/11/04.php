@@ -12,3 +12,12 @@ ERROR - 2015-11-04 13:09:04 --> Notice - Undefined variable: title in /Users/tim
 ERROR - 2015-11-04 13:09:47 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/template_admin.php on line 10
 ERROR - 2015-11-04 13:12:42 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/template_admin.php on line 10
 ERROR - 2015-11-04 13:13:10 --> Notice - Undefined variable: body in /Users/timmein/Workspace/Leertaak5/fuel/app/views/template_admin.php on line 29
+ERROR - 2015-11-04 14:35:48 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/welcome/404.php on line 5
+ERROR - 2015-11-04 14:36:20 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/welcome/404.php on line 5
+ERROR - 2015-11-04 14:36:45 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/welcome/404.php on line 5
+ERROR - 2015-11-04 14:37:07 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/welcome/404.php on line 5
+ERROR - 2015-11-04 14:37:17 --> Parsing Error - syntax error, unexpected '>', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /Users/timmein/Workspace/Leertaak5/fuel/app/classes/controller/welcome.php on line 59
+ERROR - 2015-11-04 14:37:23 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/welcome/404.php on line 5
+ERROR - 2015-11-04 14:37:51 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/welcome/404.php on line 5
+ERROR - 2015-11-04 14:38:09 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/welcome/404.php on line 5
+ERROR - 2015-11-04 14:38:22 --> Notice - Undefined variable: title in /Users/timmein/Workspace/Leertaak5/fuel/app/views/welcome/404.php on line 5
