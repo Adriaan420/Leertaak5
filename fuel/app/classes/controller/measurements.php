@@ -1,5 +1,8 @@
 <?php
 
+use Auth\Auth;
+use Fuel\Core\Response;
+
 class Controller_Measurements extends Controller_Template
 {
 
@@ -12,6 +15,11 @@ class Controller_Measurements extends Controller_Template
 		$this->template->head = View::forge('_partial/head');
 		$this->template->header = View::forge('_partial/header');
 		$this->template->footer = View::forge('_partial/footer');
+
+		if ( ! Auth::check())
+		{
+			Response::redirect('/auth/login');
+		}
 
 		// do stuff
 	}
