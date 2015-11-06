@@ -6,6 +6,7 @@ return array(
 	'auth/login' => 'auth/login',
 	'auth/logout' => 'auth/logout',
 
-	'home' => 'measurements/index'
+	'home' => 'measurements/index',
+	'home/map' => 'mapController/index'
 
 );

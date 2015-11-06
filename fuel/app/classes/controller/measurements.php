@@ -15,6 +15,8 @@ class Controller_Measurements extends Controller_Template
 		$this->template->head = View::forge('_partial/head');
 		$this->template->header = View::forge('_partial/header');
 		$this->template->footer = View::forge('_partial/footer');
+		$this->template->title = 'Measurements';
+		$this->template->js = '';
 
 		if ( ! Auth::check())
 		{
