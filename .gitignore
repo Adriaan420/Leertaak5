@@ -8,7 +8,8 @@
 .idea/workspace.xml
 nbproject/private/private.xml
 fuel/app/logs/
-fuel/app/config/developemnt
+fuel/app/config/development
+fuel/app/config/db.php
 nbproject/private/private.properties
 
 nbproject/
