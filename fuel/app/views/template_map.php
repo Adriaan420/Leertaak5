@@ -5,7 +5,7 @@
     <style>
         #map{
             position: absolute;
-            top: 60px;
+            top: 50px;
             left: 0;
             bottom: 0;
             right: 0;

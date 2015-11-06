@@ -28,7 +28,6 @@
 	</div>
 	<?= $body ?>
 	<?= $footer ?>
-	<?= $js ?>
 </div>
 </body>
 </html>

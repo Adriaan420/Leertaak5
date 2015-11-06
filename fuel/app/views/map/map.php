@@ -1,4 +1,4 @@
-<div id="map" style="height: 600px;"></div>
+<div id="map"></div>
 <script>
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
@@ -15,8 +15,8 @@
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Weerstation 23391282</h1>'+
             '<div id="bodyContent">'+
-            '<p>Hier komt realtime informatie te staan over het weerstation' +
-            'hurblurblu'+
+            '<p>Hier komt realtime informatie te staan over het weerstation'+
+            '<br>hurblurblu'+
             '</p>'+
             '</div>'+
             '</div>';
