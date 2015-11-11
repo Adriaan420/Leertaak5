@@ -7,26 +7,52 @@
 </div>
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">10 dit</h3>
+		<h3 class="panel-title">Coldest European countries</h3>
 	</div>
 	<div class="panel-body">
-		Panel content
+		<table class="table">
+			<thead>
+			<tr>
+				<th>#</th>
+				<th>Country</th>
+				<th>Average temperature</th>
+			</tr>
+			</thead>
+			<tbody>
+			<?php foreach($coldData as $item){ ?>
+			<tr>
+				<th scope="row"><?= $item->sort ?></th>
+				<td><?= $item->country ?></td>
+				<td><?= $item->data ?></td>
+			</tr>
+			<?php } ?>
+			</tbody>
+		</table>
 	</div>
 </div>
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">10 dat</h3>
+		<h3 class="panel-title">Rainfall European countries</h3>
 	</div>
 	<div class="panel-body">
-		Panel content
-	</div>
-</div>
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">10 nog iets</h3>
-	</div>
-	<div class="panel-body">
-		Panel content
+		<table class="table">
+			<thead>
+			<tr>
+				<th>#</th>
+				<th>Country</th>
+				<th>Rainfall (ml)</th>
+			</tr>
+			</thead>
+			<tbody>
+			<?php foreach($rainData as $item){ ?>
+				<tr>
+					<th scope="row"><?= $item->sort ?></th>
+					<td><?= $item->country ?></td>
+					<td><?= $item->data ?></td>
+				</tr>
+			<?php } ?>
+			</tbody>
+		</table>
 	</div>
 </div>
 <ul class="nav nav-pills">

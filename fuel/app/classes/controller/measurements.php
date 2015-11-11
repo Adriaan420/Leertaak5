@@ -28,8 +28,29 @@ class Controller_Measurements extends Controller_Template
 
 	public function action_index()
 	{
-		$this->template->title = 'Dit is de landing page';
-		$this->template->body = View::forge('measurements/index');
+		$query = Model_WeatherList::query()->where('date', Date::time()->format("%Y-%m-%d"))->where('type','max_cold');
+		$coldList = $query->get_one();
+		if($coldList != null) {
+			$coldData = $coldList->weatherData;
+		}else{
+			$coldData = [];
+		}
+
+		$query = Model_WeatherList::query()->where('date', Date::time()->format("%Y-%m-%d"))->where('type','max_rain');
+		$rainList = $query->get_one();
+		if($rainList != null) {
+			$rainData = $coldList->weatherData;
+		}else{
+			$rainData = [];
+		}
+
+		$data = [
+			'coldData' => $coldData,
+			'rainData' => $rainData
+		];
+
+		$this->template->title = '';
+		$this->template->body = View::forge('measurements/index',$data);
 	}
 
 	public function after($response)

@@ -6,7 +6,10 @@ return array(
 	'auth/login' => 'auth/login',
 	'auth/logout' => 'auth/logout',
 
+	'api/stations' => 'weatherController/list',
+    'api/station' => 'weatherController/station',
+    'api/station/update' => 'weatherController/stationUpdate',
+
 	'home' => 'measurements/index',
 	'home/map' => 'mapController/index'
-
 );

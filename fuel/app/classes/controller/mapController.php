@@ -26,6 +26,18 @@ class Controller_mapController extends Controller_Template
 
     public function action_index()
     {
+//        $stations = Model_Station::find('all');
+//
+//
+//        foreach ($stations as $i => $obj)
+//        {
+//            $stations[$i] = $obj->to_array();
+//        }
+//
+//        $stations = json_encode($stations);
+//
+//        $data = ['stations' => $stations];
+
         $this->template->body = View::forge('map/map');
     }
 
